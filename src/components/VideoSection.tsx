@@ -2,6 +2,7 @@ import assured from "@/assets/Assured.png";
 import interim from "@/assets/Interim.jpg";
 import rah from "@/assets/RAH.png";
 import homeInstead from "@/assets/home instead.png";
+import heroElement from "@/assets/hero-element.png";
 
 const VideoSection = () => {
   const logos = [
@@ -15,7 +16,7 @@ const VideoSection = () => {
   return (
     <>
       {/* Header Section */}
-      <section className="py-6 md:py-8 relative overflow-hidden">
+      {/* <section className="py-6 md:py-8 relative overflow-hidden">
         <div className="container px-4 relative z-10">
           <div className="text-center space-y-3">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground">
@@ -26,10 +27,15 @@ const VideoSection = () => {
             </p>
           </div>
         </div>
-      </section>
+        
+      </section> */}
+       
 
       {/* Client Logos Section - Full Width with Gradient */}
       <section className="py-10 md:py-16 relative overflow-hidden clients-bg mb-16">
+         <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
+        <img src={heroElement} alt="" className="hero-element-image" />
+      </div>
         <div className="container px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
             {/* Desktop: Grid Layout (hidden on mobile) */}

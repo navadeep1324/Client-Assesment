@@ -28,12 +28,12 @@ const Hero = () => {
       setDuration(video.duration);
     };
 
-    video.addEventListener('timeupdate', updateProgress);
-    video.addEventListener('loadedmetadata', handleLoadedMetadata);
+    video.addEventListener("timeupdate", updateProgress);
+    video.addEventListener("loadedmetadata", handleLoadedMetadata);
 
     return () => {
-      video.removeEventListener('timeupdate', updateProgress);
-      video.removeEventListener('loadedmetadata', handleLoadedMetadata);
+      video.removeEventListener("timeupdate", updateProgress);
+      video.removeEventListener("loadedmetadata", handleLoadedMetadata);
     };
   }, []);
 
@@ -97,18 +97,33 @@ const Hero = () => {
   const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
-    return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    return `${minutes}:${seconds.toString().padStart(2, "0")}`;
   };
 
   return (
-    <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden">
       {/* Hero decorative element - bottom left */}
-      <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
-        <img
-          src={heroElement}
-          alt=""
-          className="hero-element-image"
-        />
+      {/* <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
+        <img src={heroElement} alt="" className="hero-element-image" />
+      </div> */}
+
+      {/* Blue curve decorative element - top of video */}
+      <div className="absolute right-0 top-0 z-0 pointer-events-none overflow-hidden" style={{ width: '50%', height: '50%' }}>
+        <svg
+          viewBox="0 0 800 800"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute right-0 -top-80"
+          style={{ width: '800px', height: '800px', transform: 'scaleX(-1)' }}
+        >
+          <circle
+            cx="400"
+            cy="400"
+            r="350"
+            fill="#003E94"
+            opacity="1"
+          />
+        </svg>
       </div>
 
       {/* Wave decoration */}
@@ -142,22 +157,31 @@ const Hero = () => {
       {/* Content - Two Column Layout */}
       <div className="container relative z-10 pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-8xl mx-auto ">
-
           {/* Left Column - Content */}
           <div className="space-y-8 animate-fade-in text-left hero-col1">
             <h1 className="h1-heading">
-              Monitor <span className="text-white text-gradient">Business</span> and <span className="text-white text-gradient">Team Performance</span> in One Powerful Dashboard
+              Monitor{" "}
+              <span className="text-gradient">
+                Business and Team Performance
+              </span>{" "}
+              in One Powerful Dashboard
             </h1>
 
             <p className="para-text">
-              PulseBoard brings every call, lead, and team action into one smart dashboard—so you can see everything in real time, spot gaps instantly, and boost performance across your entire business.
+              PulseBoard brings every call, lead, and team action into one smart
+              dashboard—so you can see everything in real time, spot gaps
+              instantly, and boost performance across your entire business.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-6 items-start">
               <Button
                 size="lg"
                 className="hover:bg-white/95 text-lg px-10 py-7 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 button-item"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 Book Demo
               </Button>
@@ -175,7 +199,8 @@ const Hero = () => {
             <div
               className="relative rounded-2xl overflow-hidden shadow-2xl group border-8 border-transparent"
               style={{
-                background: 'linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #9beaa6, #36c0ed) border-box'
+                background:
+                  "linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #9beaa6, #36c0ed) border-box",
               }}
             >
               <video
@@ -212,7 +237,7 @@ const Hero = () => {
                     onChange={handleProgressChange}
                     className="w-full h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer slider"
                     style={{
-                      background: `linear-gradient(to right, #10B2E6 0%, #10B2E6 ${progress}%, #4B5563 ${progress}%, #4B5563 100%)`
+                      background: `linear-gradient(to right, #10B2E6 0%, #10B2E6 ${progress}%, #4B5563 ${progress}%, #4B5563 100%)`,
                     }}
                   />
                 </div>
@@ -224,7 +249,7 @@ const Hero = () => {
                     <button
                       onClick={togglePlay}
                       className="text-white hover:text-[#10B2E6] transition-colors"
-                      aria-label={isPlaying ? 'Pause' : 'Play'}
+                      aria-label={isPlaying ? "Pause" : "Play"}
                     >
                       {isPlaying ? (
                         <Pause className="w-6 h-6" />
@@ -238,7 +263,7 @@ const Hero = () => {
                       <button
                         onClick={toggleMute}
                         className="text-white hover:text-[#10B2E6] transition-colors"
-                        aria-label={isMuted ? 'Unmute' : 'Mute'}
+                        aria-label={isMuted ? "Unmute" : "Mute"}
                       >
                         {isMuted || volume === 0 ? (
                           <VolumeX className="w-5 h-5" />
@@ -255,7 +280,11 @@ const Hero = () => {
                         onChange={handleVolumeChange}
                         className="w-20 h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer"
                         style={{
-                          background: `linear-gradient(to right, #10B2E6 0%, #10B2E6 ${(isMuted ? 0 : volume) * 100}%, #4B5563 ${(isMuted ? 0 : volume) * 100}%, #4B5563 100%)`
+                          background: `linear-gradient(to right, #10B2E6 0%, #10B2E6 ${
+                            (isMuted ? 0 : volume) * 100
+                          }%, #4B5563 ${
+                            (isMuted ? 0 : volume) * 100
+                          }%, #4B5563 100%)`,
                         }}
                       />
                     </div>
@@ -281,8 +310,6 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent pointer-events-none rounded-2xl"></div>
             </div>
           </div>
-
-
         </div>
       </div>
 

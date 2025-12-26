@@ -1,4 +1,4 @@
-import logo from "@/assets/Pulseboard-02-02.png";
+import logo from "@/assets/Client Assessment logo.png";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4 col-span-2 md:col-span-1 footer-col1">
             <div>
-              <img src={logo} alt="PulseBoard" className="h-14 md:h-16 w-auto" />
+              <img src={logo} alt="PulseBoard" className=" w-full" />
             </div>
           </div>
 

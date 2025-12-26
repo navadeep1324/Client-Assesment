@@ -188,19 +188,23 @@ font-size: 16px;
   background: url(/src/assets/bg-hero.png);
 }
 .hero-element-image{
-  width: 400px;
+  width: 10%;
+  max-width: 100%;
   opacity: 1;
-  transform: scaleX(-1) rotate(60deg);
+  transform: scaleX(-1) rotate(180deg);
   position: relative;
   left: -250px;
-  bottom: -180px;
+  bottom: -280px;
 }
 @media (min-width: 768px) {
   .hero-element-image {
-    width: 500px;
+    width: 100px;
   }
   .stat-section{
     padding: 0px 50px
+  }
+  .features-txt{
+    margin-top: -120px;
   }
 }
 @media (min-width: 1024px) {

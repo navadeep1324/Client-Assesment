@@ -1,139 +1,111 @@
-import group44 from "@/assets/Group 44.png";
-import group45 from "@/assets/Group 45.png";
+import doc1 from "@/assets/doc.jpg";
+import doc2 from "@/assets/doc 2.jpg";
+import doc3 from "@/assets/doc 3.jpg";
 import heroElement from "@/assets/hero-element.png";
 
 const Clients = () => {
   return (
-    <section id="solutions" className="py-8 md:py-24 px-4 lg:px-8 bg-white">
-      <div className="container mx-auto max-w-7xl space-y-6 md:space-y-8">
-        {/* First Section - Blue Background */}
-        <div className="feature-card-bg py-8 md:py-8 relative overflow-hidden rounded-3xl">
-          {/* Decorative pattern in background */}
-          {/* <div className="absolute bottom-0 right-0 w-96 h-96 opacity-10">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-              <circle cx="2" cy="2" r="1" fill="white" />
-            </pattern>
-            <rect width="200" height="200" fill="url(#grid)" />
-          </svg>
-        </div> */}
-
-          <div className="relative">
-            <div className="container mx-auto max-w-7xl">
-              <div className="flex flex-col lg:flex-row items-center row-1">
-                {/* Left - Content */}
-                <div className="text-white space-y-6 relative z-10 lg:w-1/2 card-1 px-6 md:px-0">
-                  <h2 className="text-3xl md:text-5xl font-bold pr-16" style={{ lineHeight: '1.2' }}>
-                    Performance You Can See. Results You Can Scale
-                  </h2>
-                  <p className="text-lg leading-relaxed text-white">
-                    Monitor every step of the prospect journey, <br></br>from initial contact to conversion
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                      <span className="text-lg">Capture Every Inquiry</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                      <span className="text-lg">Seamless Assessment Tracking</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                      <span className="text-lg">Conversion Insights</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                      <span className="text-lg">Performance Analytics</span>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Right - Image extending to edge */}
-                <div className="relative lg:w-1/2 lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2 mt-8 lg:mt-0">
-                  {/* Hero element background decoration */}
-                  <div className="">
-                    <img
-                      src={heroElement}
-                      alt=""
-                      className="hero-bg-left"
-                    />
-                  </div>
-
-                  <img
-                    src={group44}
-                    alt="Team Performance Dashboard"
-                    className="h-auto rounded-xl lg:rounded-l-2xl lg:rounded-r-none relative z-10 card-image1"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+    <section id="solutions" className="py-16 md:py-24 px-4 lg:px-8 relative overflow-hidden">
+      {/* Decorative hero element background - right side */}
+      <div className="absolute right-[50px] top-1/2 -translate-y-1/2 translate-x-1/4 z-0 pointer-events-none">
+        <img 
+          src={heroElement} 
+          alt="" 
+          className="w-[800px] h-[800px] object-contain"
+          style={{ transform: 'rotate(150deg) scaleY(-1)' }}
+        />
+      </div>
+      
+      <div className="container mx-auto max-w-7xl relative z-10">
+        
+        {/* Header Section */}
+        <div className="text-center mb-12 space-y-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-primary">
+            Comprehensive client assessments
+          </h2>
+          <p className="text-lg md:text-xl text-foreground max-w-4xl mx-auto">
+            Experience the Advantage That Transforms Business Performance Experience the Advantage That Transforms Business Performance
+          </p>
         </div>
 
-        {/* Second Section - Green Background */}
-        <div className="feature-card-bg-2 pt-12 pb-8  relative overflow-hidden rounded-3xl">
-          {/* Decorative element */}
-          {/* <div className="absolute top-0 left-0 w-96 h-96 opacity-10">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <pattern id="grid2" width="20" height="20" patternUnits="userSpaceOnUse">
-              <circle cx="2" cy="2" r="1" fill="white" />
-            </pattern>
-            <rect width="200" height="200" fill="url(#grid2)" />
-          </svg>
-        </div> */}
-
-          <div className="relative">
-            <div className="container mx-auto max-w-8xl">
-              <div className="flex flex-col lg:flex-row items-center row-2">
-                {/* Left - Image extending to edge */}
-                <div className="relative lg:w-1/2 w-full lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 order-2 lg:order-1 mt-8 lg:mt-0">
-                  {/* Hero element background decoration */}
-                  <div className="hero-bg-right">
-                    <img
-                      src={heroElement}
-                      alt=""
-                      className="w-full h-full object-contain"
-                    />
-                  </div>
-
-                  <img
-                    src={group45}
-                    alt="Performance Analytics Dashboard"
-                    className="w-full h-auto rounded-xl lg:rounded-r-2xl lg:rounded-l-none relative z-10"
-                  />
-                </div>
-
-                {/* Right - Content */}
-                <div className="text-white space-y-6 relative z-10 lg:w-1/2 lg:ml-auto order-1 lg:order-2 card-2 px-6 md:px-0 lg:pl-32">
-                  <h2 className="text-3xl md:text-5xl font-bold" style={{ lineHeight: '1.2' }}>
-                    Identify What's Driving Growth, Instantly
-                  </h2>
-                  <p className="text-lg leading-relaxed">
-                    Track what works, identify trends, and optimize your strategy
-                  </p>
-                  <ul className="space-y-3">
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                      <span className="text-lg">Track Conversions in Real Time</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                      <span className="text-lg">Identify Top Sources</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                      <span className="text-lg">Optimize Marketing Efforts</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-cyan-400 rounded-full"></span>
-                      <span className="text-lg">Make Data-Driven Decisions</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          
+          {/* Card 1 */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-video overflow-hidden">
+              <img 
+                src={doc1} 
+                alt="Advanced analytics" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-8 space-y-4">
+              <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                Advanced analytics and insights
+              </h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Custom data reporting with 100+ reports to gain rich insights for better decision-making.
+              </p>
+              <a 
+                href="#" 
+                className="inline-block text-primary font-semibold hover:underline"
+              >
+                Learn More
+              </a>
             </div>
           </div>
+
+          {/* Card 2 */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-video overflow-hidden">
+              <img 
+                src={doc2} 
+                alt="Advanced analytics" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-8 space-y-4">
+              <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                Advanced analytics and insights
+              </h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Custom data reporting with 100+ reports to gain rich insights for better decision-making.
+              </p>
+              <a 
+                href="#" 
+                className="inline-block text-primary font-semibold hover:underline"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="aspect-video overflow-hidden">
+              <img 
+                src={doc3} 
+                alt="Advanced analytics" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-8 space-y-4">
+              <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                Advanced analytics and insights
+              </h3>
+              <p className="text-base text-gray-700 leading-relaxed">
+                Custom data reporting with 100+ reports to gain rich insights for better decision-making.
+              </p>
+              <a 
+                href="#" 
+                className="inline-block text-primary font-semibold hover:underline"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

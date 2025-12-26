@@ -1,100 +1,51 @@
 import { TrendingUp, Users, Clock, Target, Zap, BarChart } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
-const stats = [
-  {
-    icon: TrendingUp,
-    value: "85%",
-    label: "Faster",
-    description: "Response time with real-time inquiry tracking and alerts",
-    delay: "0ms",
-  },
-  {
-    icon: Users,
-    value: "90%",
-    label: "Better Team",
-    prefix: "UPTO",
-    description: "Performance improvement with data-driven insights",
-    delay: "100ms",
-  },
-  {
-    icon: Clock,
-    value: "20+",
-    label: "Saves Time",
-    suffix: "hours",
-    description: "Weekly saved through automated workflows and tracking",
-    delay: "200ms",
-  },
-  {
-    icon: Target,
-    value: "100%",
-    label: "Visibility",
-    description: "Complete transparency across all inquiries and conversions",
-    delay: "300ms",
-  },
-  {
-    icon: Zap,
-    value: "75%",
-    label: "Lead Conversion",
-    description: "Higher conversion rates through intelligent follow-ups",
-    delay: "400ms",
-  },
-  {
-    icon: BarChart,
-    value: "95%",
-    label: "Workflow Efficiency",
-    prefix: "UPTO",
-    description: "Efficiency boost through seamless integration",
-    delay: "500ms",
-  },
-];
-
 const Stats = () => {
   return (
     <section className="py-12 md:py-24 stats-gradient-section relative overflow-hidden">
       <div className="container relative z-10 stat-section">
-        <div className="grid grid-cols-1 lg:grid-cols-10 gap-6 items-stretch">
+        {/* Header Section */}
+        <div className="text-center mb-12 space-y-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground">
+            Key benefits
+          </h2>
+          <p className="text-lg md:text-xl text-foreground max-w-4xl mx-auto">
+            Go beyond features and experience disruption-free operations with CareSmartz360, the award-winning all-in-one solution for home care agencies.
+          </p>
+        </div>
 
-          {/* First Column - 40% width (4 out of 10 columns) */}
-          <div className="lg:col-span-4 flex flex-col justify-center space-y-4">
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground text-heading">
-              See How <br></br>PulseBoard Accelerates Growth
-            </h2>
-            <p className="text-xl text-muted-foreground text-desc">
-              Experience the Advantage That Transforms <br></br>Business Performance
+        {/* Benefits Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Card 1 - Open APIs & integrations */}
+          <div className="bg-white rounded-2xl p-8 flex flex-col space-y-4">
+            <h3 className="text-xl md:text-2xl font-semibold text-primary">
+              Open APIs & integrations
+            </h3>
+            <p className="text-base text-gray-700 leading-relaxed">
+              Our software is equipped with multiple APIs & integrates top-of-the-line tools & vendors to run a home care agency.
             </p>
           </div>
 
-          {/* Second Column - 20% width (2 out of 10 columns) */}
-          <div className="lg:col-span-2 bg-white rounded-xl py-6 md:py-10 px-6 flex flex-col space-y-3">
-            <div className="stat-value">40%</div>
-            <div className="stat-subtitle">Fewer</div>
-            <h3 className="stat-title">Missed Leads</h3>
-            <p className="stat-description">
-              Unified call tracking eliminates prospect loss from disorganized workflows.
+          {/* Card 2 - 24/7 software uptime */}
+          <div className="bg-white rounded-2xl p-8 flex flex-col space-y-4">
+            <h3 className="text-xl md:text-2xl font-semibold text-primary">
+              24/7 software uptime
+            </h3>
+            <p className="text-base text-gray-700 leading-relaxed">
+              Uninterrupted operations are a guarantee with CareSmartz360. Experience zero downtime, at all times.
             </p>
           </div>
 
-          {/* Third Column - 20% width (2 out of 10 columns) */}
-          <div className="lg:col-span-2 bg-white rounded-2xl py-6 md:py-10 px-6 flex flex-col space-y-3">
-            <div className="stat-value">35-45%</div>
-            <div className="stat-subtitle">Increase</div>
-            <h3 className="stat-title">Team Performance</h3>
-            <p className="stat-description">
-              Real-time visibility boosts accountability and improves performance.
+          {/* Card 3 - 360° data security */}
+          <div className="bg-white rounded-2xl p-8 flex flex-col space-y-4">
+            <h3 className="text-xl md:text-2xl font-semibold text-primary">
+              360° data security
+            </h3>
+            <p className="text-base text-gray-700 leading-relaxed">
+              Our 360° approach to security safeguards your data against unauthorized access, breaches, and other security threats.
             </p>
           </div>
-
-          {/* Fourth Column - 20% width (2 out of 10 columns) */}
-          <div className="lg:col-span-2 bg-white rounded-2xl py-6 md:py-10 px-6 flex flex-col space-y-3">
-            <div className="stat-value">50%</div>
-            <div className="stat-subtitle">Faster</div>
-            <h3 className="stat-title">Decision-Making</h3>
-            <p className="stat-description">
-              Clear insight into calls and workload enhances efficiency and planning.
-            </p>
-          </div>
-
         </div>
       </div>
     </section>
