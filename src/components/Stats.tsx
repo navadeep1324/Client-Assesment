@@ -7,7 +7,7 @@ const Stats = () => {
       <div className="container relative z-10 stat-section">
         {/* Header Section */}
         <div className="text-center mb-12 space-y-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#003796]">
             Key benefits
           </h2>
           <p className="text-lg md:text-xl text-foreground max-w-4xl mx-auto">
@@ -16,9 +16,9 @@ const Stats = () => {
         </div>
 
         {/* Benefits Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
           {/* Card 1 - Open APIs & integrations */}
-          <div className="bg-white rounded-2xl p-8 flex flex-col space-y-4">
+          <div className="bg-white rounded-2xl px-16 py-10 flex flex-col space-y-4">
             <h3 className="text-xl md:text-2xl font-semibold text-primary">
               Open APIs & integrations
             </h3>
@@ -28,7 +28,7 @@ const Stats = () => {
           </div>
 
           {/* Card 2 - 24/7 software uptime */}
-          <div className="bg-white rounded-2xl p-8 flex flex-col space-y-4">
+          <div className="bg-white rounded-2xl px-16 py-10 flex flex-col space-y-4">
             <h3 className="text-xl md:text-2xl font-semibold text-primary">
               24/7 software uptime
             </h3>
@@ -38,7 +38,7 @@ const Stats = () => {
           </div>
 
           {/* Card 3 - 360° data security */}
-          <div className="bg-white rounded-2xl p-8 flex flex-col space-y-4">
+          <div className="bg-white rounded-2xl px-16 py-10 flex flex-col space-y-4">
             <h3 className="text-xl md:text-2xl font-semibold text-primary">
               360° data security
             </h3>

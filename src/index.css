@@ -136,7 +136,7 @@ All colors MUST be HSL.
 
 }
 .hero-col1{
-  padding-right:50px;
+  padding-right:80px;
 }
 .h1-heading{
   font-family: 'Inter', sans-serif;
@@ -193,12 +193,12 @@ font-size: 16px;
   opacity: 1;
   transform: scaleX(-1) rotate(180deg);
   position: relative;
-  left: -250px;
-  bottom: -280px;
+  left: -80px;
+  bottom: -180px;
 }
 @media (min-width: 768px) {
   .hero-element-image {
-    width: 100px;
+    width: 80px;
   }
   .stat-section{
     padding: 0px 50px
@@ -209,8 +209,8 @@ font-size: 16px;
 }
 @media (min-width: 1024px) {
   .hero-element-image {
-    width: 600px;
-  }
+    width: 450px;
+  } 
 }
 .text-desc{
   color: #000;

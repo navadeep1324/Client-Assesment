@@ -108,7 +108,7 @@ const Hero = () => {
       </div> */}
 
       {/* Blue curve decorative element - top of video */}
-      <div className="absolute right-0 top-0 z-0 pointer-events-none overflow-hidden" style={{ width: '50%', height: '50%' }}>
+      <div className="absolute right-4 top-5 z-0 pointer-events-none overflow-hidden" style={{ width: '50%', height: '50%' }}>
         <svg
           viewBox="0 0 800 800"
           fill="none"
@@ -158,7 +158,7 @@ const Hero = () => {
       <div className="container relative z-10 pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-8xl mx-auto ">
           {/* Left Column - Content */}
-          <div className="space-y-8 animate-fade-in text-left hero-col1">
+          <div className="space-y-8 animate-fade-in text-left hero-col1 ">
             <h1 className="h1-heading">
               Monitor{" "}
               <span className="text-gradient">
@@ -173,7 +173,7 @@ const Hero = () => {
               instantly, and boost performance across your entire business.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-6 items-start">
+            <div className="flex flex-col sm:flex-row gap-4 items-start">
               <Button
                 size="lg"
                 className="hover:bg-white/95 text-lg px-10 py-7 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 button-item"
