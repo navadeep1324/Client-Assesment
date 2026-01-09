@@ -28,31 +28,20 @@ const Features = () => {
 
           {/* Right Column - Content */}
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-5xl font-bold text-primary leading-tight features-txt">
-              Go digital, go secure: eliminate paperwork
+            <h2 className="text-3xl md:text-5xl font-bold text-primary features-txt">
+             Replace Manual Work <br></br>with a Smarter Digital Process 
             </h2>
             
-            <p className="text-lg md:text-xl text-foreground leading-relaxed">
+            {/* <p className="text-lg md:text-xl text-foreground leading-relaxed">
               Experience the Advantage That Transforms Business Performance Experience the Advantage That Transforms Business Performance
-            </p>
+            </p> */}
 
-            <ul className="space-y-2 pt-2">
-              <li className="flex items-start gap-3">
-                <span className="text-primary text-xl  ">•</span>
-                <span className="text-lg text-foreground">Track Conversions in Real Time</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary text-xl ">•</span>
-                <span className="text-lg text-foreground">Identify Top Sources</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary text-xl ">•</span>
-                <span className="text-lg text-foreground">Optimize Marketing Efforts</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-primary text-xl">•</span>
-                <span className="text-lg text-foreground">Make Data-Driven Decisions</span>
-              </li>
+            <ul className="list-disc list-inside space-y-2 pt-2">
+              <li className="text-lg  text-foreground">Faster Client Onboarding</li>
+              <li className="text-lg  text-foreground">Less Administrative Work</li>
+              <li className="text-lg  text-foreground">Standardized Assessment Forms</li>
+              <li className="text-lg  text-foreground">Secure Digital Records</li>
+              <li className="text-lg  text-foreground">Quick Access for Care Teams</li>
             </ul>
           </div>
 

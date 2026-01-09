@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container px-4 md:py-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src={logo} alt="PulseBoard" className="h-12 md:h-16 w-auto" />
+            <img src={logo} alt="PulseBoard" className="h-12 md:h-14 w-auto" />
           </div>
 
           <nav className="hidden md:flex items-center gap-8 ml-auto mr-5">

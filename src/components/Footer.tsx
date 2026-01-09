@@ -82,7 +82,7 @@ const Footer = () => {
       <div className="bg-[#10B2E6] py-3">
         <div className="container px-4">
           <p className="text-center text-white text-sm">
-            © 2025 PulseBoard. All rights reserved.
+            © 2025 Client Assessment. All rights reserved.
           </p>
         </div>
       </div>

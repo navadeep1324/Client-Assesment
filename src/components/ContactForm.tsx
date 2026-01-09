@@ -46,7 +46,7 @@ const ContactForm = () => {
               Get in Touch
             </h2>
             <p className="text-base text-gray-800 text-xl">
-              Talk to us to see how real-time visibility can transform your business.  Schedule a demo now!
+Talk to our team today and start understanding client needs with our user-friendly assessment tool. Schedule a demo now! 
             </p>
             {/* <p className="text-base text-gray-800 text-xl">
              

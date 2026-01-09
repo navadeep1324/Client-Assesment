@@ -8,43 +8,39 @@ const Stats = () => {
         {/* Header Section */}
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-3xl md:text-5xl font-bold text-[#003796]">
-            Key benefits
+           Benefits That Transform Client Care 
           </h2>
           <p className="text-lg md:text-xl text-foreground max-w-4xl mx-auto">
-            Go beyond features and experience disruption-free operations with CareSmartz360, the award-winning all-in-one solution for home care agencies.
-          </p>
+Manual assessments are time-consuming and prone to errors. Our app makes the process faster, easier, and helps you provide the best care. Here’s why it matters           </p>
         </div>
 
         {/* Benefits Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
           {/* Card 1 - Open APIs & integrations */}
-          <div className="bg-white rounded-2xl px-16 py-10 flex flex-col space-y-4">
+          <div className="bg-white rounded-2xl px-12 py-6 flex flex-col space-y-4 text-center items-center">
             <h3 className="text-xl md:text-2xl font-semibold text-primary">
-              Open APIs & integrations
+            Save Time and Improve Care Outcomes
             </h3>
             <p className="text-base text-gray-700 leading-relaxed">
-              Our software is equipped with multiple APIs & integrates top-of-the-line tools & vendors to run a home care agency.
-            </p>
+No more paperwork, manual signatures, or repeated documentation, everything is digital, fast, and easy.            </p>
           </div>
 
           {/* Card 2 - 24/7 software uptime */}
-          <div className="bg-white rounded-2xl px-16 py-10 flex flex-col space-y-4">
+          <div className="bg-white rounded-2xl px-12 py-6 flex flex-col space-y-4 text-center items-center">
             <h3 className="text-xl md:text-2xl font-semibold text-primary">
-              24/7 software uptime
+            Clear Collaboration and Communication 
             </h3>
             <p className="text-base text-gray-700 leading-relaxed">
-              Uninterrupted operations are a guarantee with CareSmartz360. Experience zero downtime, at all times.
-            </p>
+Keep caregivers, care teams, and families informed with documents and updates all in one place.             </p>
           </div>
 
           {/* Card 3 - 360° data security */}
-          <div className="bg-white rounded-2xl px-16 py-10 flex flex-col space-y-4">
+          <div className="bg-white rounded-2xl px-12 py-6 flex flex-col space-y-4 text-center items-center">
             <h3 className="text-xl md:text-2xl font-semibold text-primary">
-              360° data security
+             Accurate & Personalized Care Plans 
             </h3>
             <p className="text-base text-gray-700 leading-relaxed">
-              Our 360° approach to security safeguards your data against unauthorized access, breaches, and other security threats.
-            </p>
+Capture every client's detail correctly to create care plans that truly match <br></br>their needs.             </p>
           </div>
         </div>
       </div>

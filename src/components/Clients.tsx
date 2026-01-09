@@ -21,11 +21,11 @@ const Clients = () => {
         {/* Header Section */}
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-3xl md:text-5xl font-bold text-primary">
-            Comprehensive client assessments
+           The Difference You Can Experience 
           </h2>
-          <p className="text-lg md:text-xl text-foreground max-w-4xl mx-auto">
+          {/* <p className="text-lg md:text-xl text-foreground max-w-4xl mx-auto">
             Experience the Advantage That Transforms Business Performance Experience the Advantage That Transforms Business Performance
-          </p>
+          </p> */}
         </div>
 
         {/* Cards Grid */}
@@ -40,11 +40,11 @@ const Clients = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-8 space-y-4">
-              <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                Advanced analytics and insights
+            <div className="p-8 space-y-4 text-center">
+              <h3 className="card-h-text font-medium text-black">
+2x Faster Decision-making with instant access to client info 
               </h3>
-              <p className="text-base text-gray-700 leading-relaxed">
+              {/* <p className="text-base text-gray-700 leading-relaxed">
                 Custom data reporting with 100+ reports to gain rich insights for better decision-making.
               </p>
               <a 
@@ -52,7 +52,7 @@ const Clients = () => {
                 className="inline-block text-primary font-semibold hover:underline"
               >
                 Learn More
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -65,11 +65,11 @@ const Clients = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-8 space-y-4">
-              <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                Advanced analytics and insights
+            <div className="p-8 space-y-4 text-center">
+              <h3 className="card-h-text font-medium text-black">
+             Higher caregiver–client match accuracy 
               </h3>
-              <p className="text-base text-gray-700 leading-relaxed">
+              {/* <p className="text-base text-gray-700 leading-relaxed">
                 Custom data reporting with 100+ reports to gain rich insights for better decision-making.
               </p>
               <a 
@@ -77,7 +77,7 @@ const Clients = () => {
                 className="inline-block text-primary font-semibold hover:underline"
               >
                 Learn More
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -90,11 +90,11 @@ const Clients = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-8 space-y-4">
-              <h3 className="text-xl md:text-2xl font-semibold text-primary">
-                Advanced analytics and insights
+            <div className="p-8 space-y-4 text-center">
+              <h3 className="card-h-text font-medium text-black">
+              Stronger client trust through transparent documentation  
               </h3>
-              <p className="text-base text-gray-700 leading-relaxed">
+              {/* <p className="text-base text-gray-700 leading-relaxed">
                 Custom data reporting with 100+ reports to gain rich insights for better decision-making.
               </p>
               <a 
@@ -102,7 +102,7 @@ const Clients = () => {
                 className="inline-block text-primary font-semibold hover:underline"
               >
                 Learn More
-              </a>
+              </a> */}
             </div>
           </div>
 

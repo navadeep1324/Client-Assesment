@@ -101,7 +101,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Hero decorative element - bottom left */}
       {/* <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
         <img src={heroElement} alt="" className="hero-element-image" />
@@ -156,21 +156,19 @@ const Hero = () => {
 
       {/* Content - Two Column Layout */}
       <div className="container relative z-10 pt-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-8xl mx-auto ">
+        <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] items-center max-w-8xl mx-auto ">
           {/* Left Column - Content */}
           <div className="space-y-8 animate-fade-in text-left hero-col1 ">
             <h1 className="h1-heading">
-              Monitor{" "}
+             Deliver{" "}
               <span className="text-gradient">
-                Business and Team Performance
+                Better Care
               </span>{" "}
-              in One Powerful Dashboard
+              Through Clear Assessments
             </h1>
 
             <p className="para-text">
-              PulseBoard brings every call, lead, and team action into one smart
-              dashboard—so you can see everything in real time, spot gaps
-              instantly, and boost performance across your entire business.
+              Understand client needs clearly, match them with the right caregiver, and keep all care documents accessible to teams and families. 
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start">
@@ -195,7 +193,7 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Video */}
-          <div className="relative animate-fade-in pb-12">
+          <div className="relative animate-fade-in pb-12 px-6 pt-6">
             <div
               className="relative rounded-2xl overflow-hidden shadow-2xl group border-8 border-transparent"
               style={{
