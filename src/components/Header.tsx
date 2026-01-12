@@ -46,10 +46,10 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed inset-0 top-[60px] bg-white transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`md:hidden fixed inset-0 top-[60px] bg-white z-40 transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
-        <nav className="flex flex-col p-4 space-y-4">
+        <nav className="flex flex-col p-4 space-y-4 bg-white">
           <a
             href="#features"
             className="text-[#000] hover:text-[#10B2E6] transition-colors font-medium text-base tracking-[0.5px] py-3 border-b border-gray-100 block"

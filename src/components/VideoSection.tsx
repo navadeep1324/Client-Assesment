@@ -32,7 +32,7 @@ const VideoSection = () => {
        
 
       {/* Client Logos Section - Full Width with Gradient */}
-      <section className="py-10 md:py-16 relative overflow-hidden clients-bg mb-16">
+      <section className="py-10 md:py-16 relative overflow-hidden clients-bg ">
          <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
         <img src={heroElement} alt="" className="hero-element-image" />
       </div>

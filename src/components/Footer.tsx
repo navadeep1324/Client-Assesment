@@ -7,8 +7,11 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-[25%_20%_20%_35%] gap-x-4 gap-y-8 mb-8">
           {/* Brand */}
           <div className="space-y-4 col-span-2 md:col-span-1 footer-col1">
-            <div>
+            <div className="text-center">
               <img src={logo} alt="PulseBoard" className=" w-full" />
+              <p className="text-black text-sm mt-4">
+                Assess clients digitally, generate care plans, and keep everyone informed.
+              </p>
             </div>
           </div>
 

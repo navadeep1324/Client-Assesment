@@ -101,30 +101,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#003E94]">
       {/* Hero decorative element - bottom left */}
       {/* <div className="absolute left-0 bottom-0 z-0 pointer-events-none">
         <img src={heroElement} alt="" className="hero-element-image" />
       </div> */}
-
-      {/* Blue curve decorative element - top of video */}
-      <div className="absolute right-4 top-5 z-0 pointer-events-none overflow-hidden" style={{ width: '50%', height: '50%' }}>
-        <svg
-          viewBox="0 0 800 800"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="absolute right-0 -top-80"
-          style={{ width: '800px', height: '800px', transform: 'scaleX(-1)' }}
-        >
-          <circle
-            cx="400"
-            cy="400"
-            r="350"
-            fill="#003E94"
-            opacity="1"
-          />
-        </svg>
-      </div>
 
       {/* Wave decoration */}
       {/* <div className="absolute inset-0 overflow-hidden">
@@ -159,15 +140,15 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[40%_60%] items-center max-w-8xl mx-auto ">
           {/* Left Column - Content */}
           <div className="space-y-8 animate-fade-in text-left hero-col1 ">
-            <h1 className="h1-heading">
+            <h1 className="h1-heading text-white">
              Deliver{" "}
               <span className="text-gradient">
                 Better Care
               </span>{" "}
-              Through Clear Assessments
+              Through Clear <span className="text-gradient">Assessments</span>
             </h1>
 
-            <p className="para-text">
+            <p className="para-text text-white">
               Understand client needs clearly, match them with the right caregiver, and keep all care documents accessible to teams and families. 
             </p>
 
@@ -193,7 +174,17 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Video */}
-          <div className="relative animate-fade-in pb-12 px-6 pt-6">
+          <div className="relative animate-fade-in pb-8 md:pb-12 px-2 md:px-6 pt-4 md:pt-6">
+            {/* Hero element decoration behind video */}
+            <div className="absolute right-[-100px] top-1/2 -translate-y-1/2 z-0 pointer-events-none">
+              <img 
+                src={heroElement} 
+                alt="" 
+                className="w-[700px] h-[700px] object-contain opacity-20"
+                style={{ transform: 'rotate(45deg)' }}
+              />
+            </div>
+            
             <div
               className="relative rounded-2xl overflow-hidden shadow-2xl group border-8 border-transparent"
               style={{

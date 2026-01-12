@@ -1,6 +1,6 @@
-import doc1 from "@/assets/doc.jpg";
-import doc2 from "@/assets/doc 2.jpg";
-import doc3 from "@/assets/doc 3.jpg";
+import doc1 from "@/assets/doc.png";
+import doc2 from "@/assets/doc 2.png";
+import doc3 from "@/assets/doc 3.png";
 import heroElement from "@/assets/hero-element.png";
 
 const Clients = () => {
@@ -23,25 +23,25 @@ const Clients = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-primary">
            The Difference You Can Experience 
           </h2>
-          {/* <p className="text-lg md:text-xl text-foreground max-w-4xl mx-auto">
-            Experience the Advantage That Transforms Business Performance Experience the Advantage That Transforms Business Performance
-          </p> */}
+          <p className="text-lg md:text-xl text-foreground max-w-4xl mx-auto">
+           Be the ideal care provider for your client with advanced user-friendly assessment application
+          </p>
         </div>
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           
           {/* Card 1 */}
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className=" rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#043880] p-1">
             <div className="aspect-video overflow-hidden">
               <img 
                 src={doc1} 
                 alt="Advanced analytics" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover card-image-top"
               />
             </div>
-            <div className="p-8 space-y-4 text-center">
-              <h3 className="card-h-text font-medium text-black">
+            <div className="p-8 space-y-4 text-center ">
+              <h3 className="card-h-text font-medium text-white">
 2x Faster Decision-making with instant access to client info 
               </h3>
               {/* <p className="text-base text-gray-700 leading-relaxed">
@@ -57,16 +57,16 @@ const Clients = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#043880] p-1">
             <div className="aspect-video overflow-hidden">
               <img 
                 src={doc2} 
                 alt="Advanced analytics" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover card-image-top"
               />
             </div>
             <div className="p-8 space-y-4 text-center">
-              <h3 className="card-h-text font-medium text-black">
+              <h3 className="card-h-text font-medium text-white">
              Higher caregiver–client match accuracy 
               </h3>
               {/* <p className="text-base text-gray-700 leading-relaxed">
@@ -82,16 +82,16 @@ const Clients = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#043880] p-1">
             <div className="aspect-video overflow-hidden">
               <img 
                 src={doc3} 
                 alt="Advanced analytics" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover card-image-top"
               />
             </div>
             <div className="p-8 space-y-4 text-center">
-              <h3 className="card-h-text font-medium text-black">
+              <h3 className="card-h-text font-medium text-white">
               Stronger client trust through transparent documentation  
               </h3>
               {/* <p className="text-base text-gray-700 leading-relaxed">

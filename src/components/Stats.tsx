@@ -15,9 +15,9 @@ Manual assessments are time-consuming and prone to errors. Our app makes the pro
         </div>
 
         {/* Benefits Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: '0.8rem' }}>
           {/* Card 1 - Open APIs & integrations */}
-          <div className="bg-white rounded-2xl px-12 py-6 flex flex-col space-y-4 text-center items-center">
+          <div className="bg-white px-12 py-6 flex flex-col space-y-4 text-center items-center stats-card">
             <h3 className="text-xl md:text-2xl font-semibold text-primary">
             Save Time and Improve Care Outcomes
             </h3>
@@ -26,7 +26,7 @@ No more paperwork, manual signatures, or repeated documentation, everything is d
           </div>
 
           {/* Card 2 - 24/7 software uptime */}
-          <div className="bg-white rounded-2xl px-12 py-6 flex flex-col space-y-4 text-center items-center">
+          <div className="bg-white px-12 py-6 flex flex-col space-y-4 text-center items-center stats-card">
             <h3 className="text-xl md:text-2xl font-semibold text-primary">
             Clear Collaboration and Communication 
             </h3>
@@ -35,7 +35,7 @@ Keep caregivers, care teams, and families informed with documents and updates al
           </div>
 
           {/* Card 3 - 360° data security */}
-          <div className="bg-white rounded-2xl px-12 py-6 flex flex-col space-y-4 text-center items-center">
+          <div className="bg-white px-12 py-6 flex flex-col space-y-4 text-center items-center stats-card">
             <h3 className="text-xl md:text-2xl font-semibold text-primary">
              Accurate & Personalized Care Plans 
             </h3>

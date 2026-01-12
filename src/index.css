@@ -140,16 +140,16 @@ All colors MUST be HSL.
 }
 .h1-heading{
   font-family: 'Inter', sans-serif;
-  font-size:50px;
+  font-size:46px;
   font-weight:700;
-  color: #0058A5;
-  line-height: 1.1em;
+  /* color: #0058A5; */
+  line-height: 1.2em;
 }
 .para-text{
   font-family: 'Inter', sans-serif;
   font-size:20px;
   font-weight:400;
-  color: #666;
+  color: #fff;
   line-height: 1.3em;
 }
 .bg-card-2{
@@ -182,7 +182,14 @@ font-size: 16px;
   background-size:cover
 }
 .stats-gradient-section{
-  background: linear-gradient(90deg, #65FFF0 0%, #10B2E6 100%);
+  /* background: linear-gradient(90deg, #65FFF0 0%, #10B2E6 100%); */
+}
+.stats-card{
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, #65FFF0 0%, #10B2E6 100%) border-box;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  box-shadow: 0px 4px 3px 0px rgba(54, 192, 237, 0.42);
 }
 .bg-gradient-hero{
   background: url(/src/assets/bg-hero.png);
@@ -197,6 +204,9 @@ font-size: 16px;
   bottom: -180px;
 }
 @media (min-width: 768px) {
+  .solutions-heading{
+  line-height: 3.5rem !important;
+}
   .hero-element-image {
     width: 80px;
   }
@@ -204,7 +214,8 @@ font-size: 16px;
     padding: 0px 50px
   }
   .features-txt{
-    margin-top: -200px;
+    margin-top: -40px;
+    line-height: 3.5rem !important;
   }
 }
 @media (min-width: 1024px) {
@@ -212,20 +223,19 @@ font-size: 16px;
     width: 450px;
   } 
 }
-.features-txt{
-  line-height: 3.5rem !important;
-}
+
 .text-desc{
   color: #000;
 }
 .text-heading{
   line-height: 1.1em !important;
 }
-.solutions-heading{
-  line-height: 3.5rem !important;
-}
+
 .card-h-text{
   font-size: 1.2rem;
+}
+.card-image-top{
+  border-radius: 0.75rem 0.75rem 0 0;
 }
 /* Stats Section Styling */
 .stat-value {
@@ -290,8 +300,9 @@ font-size: 16px;
   padding: 50px 50px 50px 0px;
 }
 .clients-bg{
-   background:linear-gradient(to bottom, #ffffff 0%, #A7FFED 55%, #EBFCFA 90%, #ffffff 100%);
-}
+   /* background:linear-gradient(to bottom, #ffffff 0%, #A7FFED 55%, #EBFCFA 90%, #ffffff 100%); */
+background-color: #DBF9FF;
+  }
 .footer-img{
   width: 70%;
 
