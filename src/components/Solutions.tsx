@@ -76,7 +76,7 @@ Forms That Are Convenient & Accessible             </h3>
 
             <ul className="list-disc list-inside space-y-2 ">
               <li className="text-lg text-foreground">Ready-to-use and pre-built templates </li>
-              <li className="text-lg text-foreground">Adapt forms to match each client’s unique needs </li>
+              <li className="text-lg text-foreground">Speed up approvals with secured e-sign feature </li>
               <li className="text-lg text-foreground">Export care plans and forms as PDFs instantly. </li>
               <li className="text-lg text-foreground">Access and fill forms anytime, from any device </li>
             </ul>
