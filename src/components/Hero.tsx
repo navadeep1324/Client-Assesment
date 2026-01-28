@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { useState, useRef, useEffect } from "react";
 import { Play, Pause, Volume2, VolumeX, Maximize } from "lucide-react";
 import heroElement from "@/assets/hero-element.png";
-import demoVideo from "@/assets/PulseBoard-Demo_II_1920x1080.mp4";
-import videoPoster from "@/assets/PulseBoard_ Featured image_1920x1080.png";
+import demoVideo from "@/assets/Client Assessment Demo_Video.mp4";
+import videoPoster from "@/assets/Client Assessment_thumbnail.jpg";
 
 const Hero = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
