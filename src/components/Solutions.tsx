@@ -17,7 +17,7 @@ Here’s how our app helps you capture every detail, track progress, and stay or
         </div>
 
         {/* First Section - Unified Assessment Dashboard */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 md:px-12 lg:px-24 rounded-3xl py-8 md:py-12" style={{ background: 'radial-gradient(circle at top right, #DBF9FF 0%, #ffffff 70%)' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 md:px-12 lg:px-24 rounded-3xl py-8 md:py-16" style={{ background: 'radial-gradient(circle at top right, #DBF9FF 0%, #ffffff 70%)',  }}>
           {/* Left Column - Content */}
           <div className="space-y-6">
             <h3 className="text-3xl md:text-5xl font-bold text-foreground">
@@ -45,7 +45,7 @@ Capture every client’s detail in one place and track the <br></br>assessment p
           </div>
 
           {/* Right Column - Image */}
-          <div className="flex justify-center lg:justify-end px-0 md:px-6">
+          <div className="flex justify-center lg:justify-end px-0">
             <img 
               src={group64} 
               alt="Unified Assessment Dashboard" 
@@ -55,9 +55,9 @@ Capture every client’s detail in one place and track the <br></br>assessment p
         </div>
 
         {/* Second Section - Identify What's Driving Growth */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 md:px-12 lg:px-16 rounded-3xl py-8 md:py-12" style={{ background: 'radial-gradient(circle at top left, #DBF9FF 0%, #ffffff 70%)' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center rounded-3xl py-8 md:py-14" style={{ background: 'radial-gradient(circle at top left, #DBF9FF 0%, #ffffff 70%)' }}>
           {/* Left Column - Image */}
-          <div className="flex justify-center lg:justify-start order-2 lg:order-1 px-0 md:px-12">
+          <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <img 
               src={group65} 
               alt="Growth Analytics" 
@@ -66,12 +66,13 @@ Capture every client’s detail in one place and track the <br></br>assessment p
           </div>
 
           {/* Right Column - Content */}
-          <div className="space-y-6 order-1 lg:order-2 pl-0 md:pl-12">
+          <div className="space-y-6 order-1 lg:order-2 pl-0 md:pl-14 pr-10">
             <h3 className="text-3xl md:text-5xl font-bold text-foreground">
-Forms That Are Convenient & Accessible             </h3>
+Forms That Are Convenient & Accessible
+            </h3>
             
             <p className="text-lg text-foreground leading-relaxed">
-             Smart forms that adapt to your client's needs, fit into your workflow and share care forms with ease. 
+             Smart forms that adapt to your client's needs,<br></br> fit into your workflow and share care forms with ease. 
             </p>
 
             <ul className="list-disc list-inside space-y-2 ">
